@@ -10,32 +10,33 @@
   <body>
     <!-- Write yout code here -->
 <div class="calculator">
-    <div class="display">0</div>
-    <div class="operations">7</div>
-    <div class="operations">8</div>
-    <div class="operations">9</div>
-    <div class="operations">/</div>
-    
-    <div class="operations">4</div>
-    <div class="operations">5</div>
-    <div class="operations">6</div>
-    <div class="operations">*</div>
-    
-    <div class="operations">1</div>
-    <div class="operations">2</div>
-    <div class="operations">3</div>
-    <div class="operations">-</div>
+    <div class="display" id="display">0</div>
+    <button class="operations" onclick="clearDisplay()">C</button>
+    <button class="operations" onclick="appendValue('(')">(</button>
+    <button class="operations" onclick="appendValue(')')">)</button>
+    <button class="operations" onclick="appendValue('%')">%</button>
 
-    <div class="operations">0</div>
-    <div class="operations">.</div>
-    <div class="operations">=</div>
-    <div class="operations">+</div>
-    
-    <div class="operations">C</div>
-    <div class="operations">(</div>
-    <div class="operations">)</div>
-    <div class="operations">%</div>
+    <button class="operations" onclick="appendValue('7')">7</button>
+    <button class="operations" onclick="appendValue('8')">8</button>
+    <button class="operations" onclick="appendValue('9')">9</button>
+    <button class="operations" onclick="appendValue('/')">/</button>
+
+    <button class="operations" onclick="appendValue('4')">4</button>
+    <button class="operations" onclick="appendValue('5')">5</button>
+    <button class="operations" onclick="appendValue('6')">6</button>
+    <button class="operations" onclick="appendValue('*')">*</button>
+
+    <button class="operations" onclick="appendValue('1')">1</button>
+    <button class="operations" onclick="appendValue('2')">2</button>
+    <button class="operations" onclick="appendValue('3')">3</button>
+    <button class="operations" onclick="appendValue('-')">-</button>
+
+    <button class="operations" onclick="appendValue('0')">0</button>
+    <button class="operations" onclick="appendValue('.')">.</button>
+    <button class="operations" onclick="calculateResult()">=</button>
+    <button class="operations" onclick="appendValue('+')">+</button>
 </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,9 +1,5 @@
 /*  your css code here. If applicable */
- /* .operations{
-	 width:70px;
-	 height: 70px;
-	 border: 1px solid black;
- } */
+
 .calculator{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -31,4 +27,7 @@
 	text-align: center;
 	border-radius: 10px;
 	cursor: pointer;
+}
+.operations:hover{
+	background: #555;
 }
